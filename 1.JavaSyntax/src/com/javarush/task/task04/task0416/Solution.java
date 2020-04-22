@@ -10,9 +10,9 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String a1 = reader.readLine();
-        Double t = Double.parseDouble(a1):
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        String a1 = reader.readLine();
+//        Double t = Double.parseDouble(a1):
 
 
     }

@@ -1,7 +1,7 @@
-package com.javarush.task.task04.task0417;
+package com.javarush.task.task04.task0419;
 
 /* 
-Существует ли пара?
+Максимум четырех чисел
 */
 
 import java.io.BufferedReader;
@@ -14,24 +14,14 @@ public class Solution {
         String a1 = reader.readLine();
         String b1 = reader.readLine();
         String c1 = reader.readLine();
+        String d1 = reader.readLine();
         int a = Integer.parseInt(a1);
         int b = Integer.parseInt(b1);
         int c = Integer.parseInt(c1);
+        int d = Integer.parseInt(d1);
 
-        if (a == b && b == c && a == c ){
-            System.out.println(a + " " + b + " " + c);
-        }
-        else if (a == b){
-            System.out.println(a + " " + b);
-        }
-        else if (a == c){
-            System.out.println(a + " " + c);
-        }
-        else if (b == c) {
-            System.out.println(b + " " + c);
-        }
-
-        
+        int m = Math.max(Math.max(a, b), Math.max(c, d));
+        System.out.println(m);
 
     }
 }
