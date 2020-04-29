@@ -9,7 +9,7 @@ public class Solution {
     public static int even;
     public static int odd;
 
-    public static void main(String[] args) throws IOException {
-        //напишите тут ваш код
-    }
+//    public static void main(String[] args) throws IOException {
+//        //напишите тут ваш код
+//    }
 }
