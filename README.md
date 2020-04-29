@@ -1,1 +1,1 @@
-<<JavaRush Course>>
+JavaRush Course
