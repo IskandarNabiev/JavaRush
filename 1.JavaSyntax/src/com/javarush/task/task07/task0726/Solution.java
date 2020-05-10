@@ -22,7 +22,10 @@ public class Solution {
                 break;
             }
 
-            Cat cat = new Cat(name);
+            int age = Integer.parseInt(reader.readLine());
+            int weight = Integer.parseInt(reader.readLine());
+            int tail = Integer.parseInt(reader.readLine());
+            Cat cat = new Cat(name, age, weight, tail);
             CATS.add(cat);
         }
 
