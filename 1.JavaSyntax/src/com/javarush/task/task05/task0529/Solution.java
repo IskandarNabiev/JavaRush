@@ -1,7 +1,7 @@
-package com.javarush.task.task05.task0507;
+package com.javarush.task.task05.task0529;
 
 /* 
-Среднее арифметическое
+Консоль-копилка
 */
 
 import java.io.BufferedReader;
@@ -10,18 +10,18 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        double result = 0;
-        int i = 0;
+        int result = 0;
         while (true) {
-            int num = Integer.parseInt(reader.readLine());
-            if (num == -1) {
+            String s = reader.readLine();
+            if (s.equals("сумма")) {
                 break;
             }
-            else
+            else {
+                int num = Integer.parseInt(s);
                 result = result + num;
-                i++;
+            }
         }
-        System.out.println(result/i);
+        System.out.println(result);
+
     }
 }
-
