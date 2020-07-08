@@ -1,5 +1,6 @@
 package com.javarush.task.task08.task0821;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /* 
@@ -13,9 +14,20 @@ public class Solution {
     }
 
     public static Map<String, String> createPeopleMap() {
-        //напишите тут ваш код
+        Map<String, String> men = new HashMap<>();
+        men.put("Belov", "Alex");
+        men.put("Belov", "Alex");
+        men.put("Belov", "Alex");
+        men.put("Belov", "Alex");
+        men.put("Belov", "Alex");
+        men.put("Belov", "Alex");
+        men.put("Belov", "Alex");
+        men.put("Belov34", "Alex2");
+        men.put("Belov3", "Alex");
+        men.put("Belov2", "Alex");
 
-        return null;
+
+        return men;
     }
 
     public static void printPeopleMap(Map<String, String> map) {
