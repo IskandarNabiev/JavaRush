@@ -1,5 +1,7 @@
 package com.javarush.task.task11.task1123;
 
+import java.util.Arrays;
+
 public class Solution {
     public static void main(String[] args) {
         int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
@@ -14,10 +16,9 @@ public class Solution {
         if (inputArray == null || inputArray.length == 0) {
             return new Pair<Integer, Integer>(null, null);
         }
-
-        // напишите тут ваш код
-
-        return new Pair<Integer, Integer>(0, 0);
+        int[] copy = Arrays.copyOf(inputArray, inputArray.length);
+        Arrays.sort(copy);
+        return new Pair<Integer, Integer>(copy[0], copy[copy.length-1]);
     }
 
     public static class Pair<X, Y> {
