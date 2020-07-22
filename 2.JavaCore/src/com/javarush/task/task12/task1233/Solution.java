@@ -21,22 +21,24 @@ public class Solution {
             return new Pair<Integer, Integer>(null, null);
         }
 
-
+        int index = 0;
         int min = array[0];
         for (int i = 1; i < array.length; i++) {
                 if (array[i] < min) {
                     min = array[i];
+                    index = i;
+
                 }
         }
 
-        int index = 0;
-        int minIndex = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < minIndex) {
-                minIndex = array[i];
-                index = i;
-            }
-        }
+//        int index = 0;
+//        int minIndex = array[0];
+//        for (int i = 1; i < array.length; i++) {
+//            if (array[i] < minIndex) {
+//                minIndex = array[i];
+//                index = i;
+//            }
+//        }
 
         return new Pair<Integer, Integer>(min, index);
     }
