@@ -1,5 +1,6 @@
 package com.javarush.task.task15.task1505;
 
+import javax.swing.table.TableRowSorter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,7 @@ import java.util.List;
 public class Solution {
 
     public static interface LivingPart {
-        boolean containsBones();
+        Object containsBones();
     }
 
     public static class BodyPart implements LivingPart {
@@ -20,12 +21,15 @@ public class Solution {
             this.name = name;
         }
 
-        public boolean containsBones() {
-            return true;
+        public Object containsBones() {
+            return "Yes";
         }
 
         public String toString() {
-            return containsBones() ? name + " содержит кости" : name + " не содержит кости";
+            if (containsBones().equals("Yes")) {
+                return name + " содержит кости";
+            }
+            return name + " не содержит кости";
         }
     }
 
@@ -37,8 +41,11 @@ public class Solution {
             this.isArtificial = isArtificial;
         }
 
-        public boolean containsBones() {
-            return super.containsBones() && !isArtificial;
+        public Object containsBones() {
+            if (super.containsBones().equals("Yes") && !isArtificial) {
+                return "Yes";
+            }
+            return "No";
         }
     }
 
