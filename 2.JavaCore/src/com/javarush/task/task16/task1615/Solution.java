@@ -22,7 +22,6 @@ public class Solution {
     }
 
     private static void takingOff() {
-        //fix this method - исправь этот метод
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
